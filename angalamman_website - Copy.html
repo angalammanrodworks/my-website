@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angalamman Rod Works - Mining & Rock Drilling Tools Supplier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('r:/backgraound.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .company-name {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+
+        section:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-top: 4px solid #2a5298;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card h3 {
+            color: #1e3c72;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .product-card li {
+            padding: 8px 0;
+            color: #555;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .product-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+            font-weight: bold;
+        }
+
+        .contact-note {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        /* Recycling Section */
+        .recycling {
+            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            color: white;
+        }
+
+        .recycling .section-title {
+            color: white;
+        }
+
+        .recycling-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .recycling-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .key-point {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #2a5298;
+        }
+
+        .key-point strong {
+            color: #1e3c72;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-item h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .contact-item p, .contact-item a {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .location-link {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .location-link:hover {
+            color: #1e3c72;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .company-name {
+                font-size: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .key-points {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="company-name">Angalamman Rod Works</div>
+            <h1>Mining & Rock Drilling Tools Supplier</h1>
+            <p>Jack Hammer Spare Parts, Button Bits, Drill Rods & Recycling Services</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="RH 658 5L.png" alt="Jack Hammer Spare Parts" class="full-size">
+                    <h3>Jack Hammer / Rock Drill Spare Parts</h3>
+                </div>
+                <div class="product-card">
+                    <img src="30mm.webp" alt="Button Bits">
+                    <h3>Button Bits</h3>
+                </div>
+                <div class="product-card">
+                    <img src="deill rods.png" alt="Drill Rods">
+                    <h3>Drill Rods</h3>
+                </div>
+            </div>
+            <p class="contact-note">For pricing and availability, contact us on WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- Recycling Section -->
+    <section class="recycling">
+        <div class="container">
+            <h2 class="section-title">We Buy Old / used Button Bits for Recycling</h2>
+            <div class="recycling-content">
+                <p>We purchase worn-out and used button bits for recycling with fair pricing and responsible processing.</p>
+                <a href="https://wa.me/919443368850" class="whatsapp-btn" target="_blank">Contact on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Angalamman Rod Works is a trusted supplier of mining and rock drilling tools, known for quality products, reliable supply, and strong industry experience.</p>
+                <div class="key-points">
+                    <div class="key-point">
+                        <strong>Reliable supply of quality products</strong>
+                    </div>
+                    <div class="key-point">
+                        <strong>Competitive pricing</strong>
+                    </div>
+                    <div class="key-point">
+                        <strong>Mining industry experience</strong>
+                    </div>
+                    <div class="key-point">
+                        <strong>Technical support</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Location</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Phone / WhatsApp</h3>
+                    <p>+91 9443368850</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <a href="https://maps.app.goo.gl/WrNMpo3hNv5zXvYZA" class="location-link" target="_blank">
+                        Angalamman Rod Works – View Location on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Angalamman Rod Works. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
